@@ -3,9 +3,9 @@ constants
  */
 const today = new Date();
 const day = today.getDate();
-let month = today.getMonth();//02
+let month = today.getMonth();
 let year = today.getFullYear();
-const locale = 'en-US'//navigator.language;
+const locale = 'en-US';
 const monthName = new Date(year, month).toLocaleString(locale, {month: "long"});
 
 /*
