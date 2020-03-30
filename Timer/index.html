@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="first">
+        <div class="current_date">
+            <!-- test date -->
+        </div>
+        <div class="current_time">
+            <!-- test time -->
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="stopwatch_block">
+            <div class="stopwatch">
+                <span id="stopwatch_hours">00</span>:<span id="stopwatch_minutes">00</span>:<span id="stopwatch_seconds">00</span>:<span id="stopwatch_ms">00</span>
+            </div>
+            <div class="buttons">
+                <button class="general_btn" onclick="startStopwatch()">Start</button>
+                <button class="general_btn" onclick="loopStopwatch()">Loop</button>
+                <button class="general_btn" onclick="stopStopwatch()">Stop</button>
+                <button class="general_btn" onclick="resetStopwatch()">Reset</button>
+            </div>
+        </div>
+        <div class="stopwatch_values">
+            <!-- test -->
+        </div>
+    </section>
+
+    <section class="third">
+        <div class="minutes">
+            <div class="minutes_number">
+                <span id="min_num">25</span><br>
+                <span id="min_word">minutes</span>
+            </div>
+            <div class="minutes_buttons">
+                <button class="minutes_btn" onclick="addPoint()">+</button>
+                <button class="minutes_btn" onclick="subtractPoint()">-</button>
+            </div>
+        </div>
+        <div class="timer">
+            <div class="timer_number">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <div class="timer_buttons">
+                <button class="general_btn" onclick="timerStart()">Start</button>
+                <button class="general_btn" id="timer_stop">Stop</button>
+                <button class="general_btn" onclick="timerReset()">Reset</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
