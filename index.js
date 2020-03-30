@@ -24,7 +24,6 @@ const getWeekStartDate = (month, year) => {
 }
 
 
-
 /*
 set current date(month year day)
  */
