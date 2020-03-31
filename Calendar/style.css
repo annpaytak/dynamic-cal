@@ -1,0 +1,91 @@
+/*
+GENERAL
+ */
+​ html,
+body {
+    height: 100%;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+​ button:focus {
+    outline: 0;
+}
+
+​ .page {
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 15% 85%;
+}
+
+​ ​
+
+/*
+ MODIFIERS
+  */
+.title__text {
+    font-size: 40px;
+}
+
+.title__text--bold {
+    font-weight: 700;
+}
+
+.title__text--light {
+    font-weight: 300;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/*
+ todo:
+  .day--selected
+  .body__row__item--today
+  .body__row__item--disabled
+  */
+​ ​ ​
+
+/*
+ HEADER
+  */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+​ ​
+
+/*
+ TABLE
+  */
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 90%;
+}
+
+.head__row,
+.body__row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.table__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.body__row__item {
+    border: 1px solid rgb(184, 184, 184);
+    padding: 8px 10px;
+}
