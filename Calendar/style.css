@@ -1,17 +1,15 @@
-/*
-GENERAL
- */
-​ html,
+html,
 body {
     height: 100%;
     font-family: 'Be Vietnam', sans-serif;
+
 }
 
-​ button:focus {
+button:focus {
     outline: 0;
 }
 
-​ .page {
+.page {
     margin: auto;
     width: 900px;
     height: 600px;
@@ -19,11 +17,10 @@ body {
     grid-template-rows: 15% 85%;
 }
 
-​ ​
 
 /*
- MODIFIERS
-  */
+MODIFIERS
+ */
 .title__text {
     font-size: 40px;
 }
@@ -46,26 +43,26 @@ button {
 }
 
 /*
- todo:
-  .day--selected
-  .body__row__item--today
-  .body__row__item--disabled
-  */
-​ ​ ​
+todo:
+ .day--selected
+ .body__row__item--today
+ .body__row__item--disabled
+ */
+
+
 
 /*
- HEADER
-  */
+HEADER
+ */
 .header {
     display: flex;
     justify-content: space-between;
 }
 
-​ ​
 
 /*
- TABLE
-  */
+TABLE
+ */
 .table {
     display: grid;
     grid-template-columns: 1fr;
