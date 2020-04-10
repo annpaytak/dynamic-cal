@@ -1,10 +1,7 @@
-/*
-GENERAL
- */
-
 html, body{
     height: 100%;
     font-family: 'Be Vietnam', sans-serif;
+    
 }
 
 button:focus{outline: 0;}
@@ -60,18 +57,27 @@ TABLE
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 90%;
+
+    .head__row {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .table__body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        .body__row{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 1fr;
+            .body__row__item{
+                border: 1px solid rgb(184, 184, 184);
+                padding: 8px 10px;
+            }
+        }
+    }
 }
-.head__row, .body__row{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 1fr;
-}
-.table__body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-}
-.body__row__item{
-    border: 1px solid rgb(184, 184, 184);
-    padding: 8px 10px;
-}
+
+
+

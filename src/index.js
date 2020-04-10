@@ -1,6 +1,4 @@
-/*
-constants
- */
+
 const today = new Date();
 const day = today.getDate();
 let month = today.getMonth();//02
@@ -105,6 +103,3 @@ const init = () => {
     drawCalendarDates();
 }
 init();
-
-
-
