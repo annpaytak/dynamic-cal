@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="root">
+        <header>
+            <div class="buttons-header" id="buttons-header-main">
+                <div class="editorDiv buttons-block"><div class="editorLink buttons-block_element"
+                        onclick="editorRedirect()"></div></div>
+                <div class="textStyleDiv buttons-block">
+                    <input type="button" value="" class="boldText buttons-block_element" onclick="bold()">
+                    <input type="button" value="" class="cursiveText buttons-block_element" onclick="cursive()">
+                    <input type="button" value="" class="underlineText buttons-block_element" onclick="underline()">
+                    <input type="button" value="" class="strikethroughText buttons-block_element"
+                        onclick="strikethrough()">
+                </div>
+                <div class="textAlignDiv buttons-block">
+                    <input type="button" value="" class="buttons-block_element alignLeftText" onclick="alignLeft()">
+                    <input type="button" value="" class="buttons-block_element alignCenterText" onclick="alignCenter()">
+                    <input type="button" value="" class="buttons-block_element alignRightText" onclick="alignRight()">
+                </div>
+                <div class="colorDiv buttons-block">
+                    <select name="" class="buttons-block_element" id="fontText" onchange="changeFont()">
+                        <option hidden value="" id=""></option>
+                        <option value="arial" class="arial">Arial</option>
+                        <option value="georgia" class="georgia">Georgia</option>
+                        <option value="impact" class="impact">Impact</option>
+                        <option value="tahoma" class="tahoma">Tahoma</option>
+                        <option value="tnr" class="tnr">Times New Roman</option>
+                        <option value="verdana" class="verdana">Verdana</option>
+
+                    </select>
+                    <select name="" class="buttons-block_element" id="sizeText" onchange="changeSize()">
+                        <option hidden value="" id=""></option>
+                        <option value="twelve" class="twelve">12px</option>
+                        <option value="fourteen" class="fourteen">14px</option>
+                        <option value="sixteen" class="sixteen">16px</option>
+                        <option value="eighteen" class="eighteen">18px</option>
+                        <option value="twenty" class="twenty">20px</option>
+                        <option value="twentyTwo" class="twentyTwo">22px</option>
+                        <option value="twentyFive" class="twentyFive">25px</option>
+                        <option value="thirty" class="thirty">30px</option>
+                    </select>
+                    <input type="button" value="" class="buttons-block_element" id="pallete">
+                    <input type="button" value="" class="buttons-block_element" id="picture">
+                </div>
+                <div class="loginDiv buttons-block">
+                    <input type="button" value="" class="buttons-block_element" id='login'>
+                </div>
+            </div>
+            <div class="buttons-header" id="buttons-header-editor">
+                <div class="buttons-block">
+                    <input type="button" value="" class="editorSave buttons-block_element" onclick="saveChanges()">
+                </div>
+        </header>
+        <section id="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore quidem eum?</p>
+        </section>
+        <section id="content_editor" contenteditable="true"></section>
+        <div class="block" id="pallete_block">
+            <div class="block_header" id="pallete_block_header">Choose text color <button class="escButton"
+                    id="pallete_block_escButton">ESC</button></div>
+            <div class="block_colors" id="pallete_block_colors"></div>
+
+        </div>
+        <div class="block" id="picture_block">
+            <div class="block_header" id="picture_block_header">Choose background color <button class="escButton"
+                    id="picture_block_escButton">ESC</button></div>
+            <div class="block_colors" id="picture_block_colors"></div>
+        </div>
+        <div class="block" id="singin_block">
+            <div class="block_header">Sign In <button class="escButton" id="singin_block_escButton">ESC</button></div>
+            <form action="" method="post" id="singin_block_form" onsubmit="formSubmit(event)">
+                <input type="text" id="singin_block_login" placeholder="login">
+                <input type="password" id="singin_block_password" placeholder="password">
+                <input type="submit" id="singin_block_submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
